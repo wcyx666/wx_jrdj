@@ -1,0 +1,41 @@
+<!--pages/order/deilter/deilter.wxml-->
+<view class="order-deilter">
+  <view class="order-deilter-info">
+    <view class="title">
+      {{ details.proName }}
+      <text class="bs" wx:if="{{ details.identification == 0 }}">待接单</text>
+      <text class="bs" wx:if="{{ details.identification == 1 }}">已接单</text>
+      <text class="bs" wx:if="{{ details.identification == 2 }}">维修中</text>
+      <text class="bs" wx:if="{{ details.identification == 3 }}">已完成</text>
+      <text class="bs" wx:if="{{ details.identification == 4 }}">已取消</text>
+    </view>
+    <view class="problem">{{ details.textarea }}</view>
+  </view>
+  <view class="order-deilter-content">
+    <view class="order-deilter-content-info">
+      <view>维修订单：{{ details.id }}</view>
+      <view>预约时间：{{ details.makeData }} {{ details.makeTime }}</view>
+      <view>房屋地址：{{ details.title }}{{ details.num }}</view>
+      <view>上门联系：{{ details.name }}（{{ details.mobie }}）</view>
+    </view>
+    <view class="order-deilter-content-info">
+      <view>接单师傅：{{ details.proName }}</view>
+      <view>师傅电话：{{ details.proName }}</view>
+      <view>维修价格：{{ details.proName }}</view>
+    </view>
+  </view>
+  <view class="tips">
+    <view class="title">
+      温馨提示：
+    </view>
+    <view class="txt">
+      1.注意接听师傅电话，具体问题、价格详情与师傅电话沟通。
+    </view>
+    <view class="txt">
+      2.如有问题，请联系我们客服。
+    </view>
+  </view>
+  <view class="canle" bindtap='canclOrder' wx:if="{{ details.identification == 0 }}">
+    取消订单
+  </view>
+</view>

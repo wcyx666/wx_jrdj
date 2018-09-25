@@ -1,0 +1,25 @@
+<!--pages/my/local/local.wxml-->
+<view class="local">
+  <view class="local_list" wx:for="{{ dataArr }}">
+    <view class="local_list_radio" data-local="{{ item }}" bindtap='localInfo'>
+      <label class="radio">
+        <radio value="" checked=""/>
+        <view class="local_list_info">
+          <view class="local_list_add">{{ item.title }}{{ item.num }}</view>
+          <view class="local_list_re">
+            <text>{{ item.name }}</text>
+            <text style='margin-left:15rpx;'>{{ item.mobie }}</text>
+          </view>
+        </view>
+      </label>
+    </view>
+    
+    <image src='../../../image/icon_update.png' data-id="{{ item.id }}" mode='widthFix' bindtap='UpdateLocal'></image>
+  </view>
+
+  <view class="local_news">
+    <view class="local_add" bindtap='addLocal'>
+      添加新地址
+    </view>
+  </view>
+</view>

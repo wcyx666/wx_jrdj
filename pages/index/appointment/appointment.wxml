@@ -1,0 +1,15 @@
+<!--pages/index/appointment/appointment.wxml-->
+<wxs src="../../../filter/filter.wxs" module="filter" />
+<view class="appointment">
+  <view class="make-date-list">
+    <view wx:for="{{ dateList }}" class="{{ timeIndex == index?'arctive':'' }} item" data-index="{{ index }}" bindtap='getTime'>
+      <view class="week">{{ item.week }}</view>
+      <view class="date">{{ filter.phoneSub(item.date) }}</view>
+    </view>
+  </view>
+  <view class="make-time-list">
+    <view class='{{ filter.timeStamp(dateList[timeIndex].date+" "+item)>timestamp?"timeView":"timeViewCor" }}' wx:for="{{ dateList[timeIndex].time }}" data-time="{{ item }}" data-date="{{ dateList[timeIndex].date }}" bindtap='chooseTime'>
+      {{ item }}
+    </view>
+  </view>
+</view>

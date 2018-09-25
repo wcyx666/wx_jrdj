@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/index/problem/problem",   
+    "pages/index/index",
+    "pages/my/local/localAdd/localAdd",
+    "pages/my/local/localUpdate/localUpdate",
+   
+    "pages/localMap/localMap",
+    "pages/index/service-address/address",
+   
+    
+    "pages/index/appointment/appointment",
+    "pages/index/cleaning-project/project",
+    
+    "pages/index/preOrder/preOrder",
+    "pages/index/palce/palce",
+    "pages/my/my",
+    
+    "pages/my/local/local",
+    "pages/my/coupon/coupon",
+    "pages/logs/logs",
+    "pages/order/order",
+    "pages/order/deilter/deilter"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fafafa",
+    "navigationBarTitleText": "保洁",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#fafafa"
+  },
+  "backgroundTextStyle": "dark",
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "text": "首页",
+        "iconPath": "./image/icon_home.png",
+        "selectedIconPath": "./image/icon_home_col.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "订单",
+        "iconPath": "./image/icon_order.png",
+        "selectedIconPath": "./image/icon_order_col.png",
+        "pagePath": "pages/order/order"  
+      },
+      {
+        "text": "我的",
+        "iconPath": "./image/icon_my.png",
+        "selectedIconPath": "./image/icon_my_col.png",
+        "pagePath": "pages/my/my"      
+      }
+    ]
+  }
+}

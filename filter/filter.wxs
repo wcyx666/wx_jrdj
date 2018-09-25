@@ -1,0 +1,18 @@
+// 切割
+var phoneSub = function (val) {
+  return val.substring(5, 12);
+}
+// 字符串转换数组
+var arrSplist = function (val) {
+  return val.split(',');
+}
+// 转换时间戳
+var timeStamp = function (val) {
+  var timestamp = getDate(val).getTime();
+  return timestamp;
+}
+module.exports = {
+  phoneSub: phoneSub,
+  arrSplist: arrSplist,
+  timeStamp: timeStamp
+};

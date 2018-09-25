@@ -1,0 +1,40 @@
+<!--pages/my/my.wxml-->
+<view class="my">
+  <view class="my_info">
+    <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="tn" wx:if="{{ userInfo == '' }}">点击登录</button>
+    <view class="my_info_phone" wx:if="{{ userInfo != '' }}">
+      {{ userInfo.nickName }}
+    </view>
+    <view class="my_info_tx">
+      <image src='{{ userInfo.avatarUrl }}' mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="my_list">
+    <view class="my_list_coupon item" bindtap='coupon'>
+      <image src='../../image/icon_coupon.png' mode="widthFix"></image>
+      <text>我的优惠券</text>
+      <image src='../../image/icon_jinru.png' mode="widthFix" class="return"></image>
+    </view>
+    <view class="my_list_local item" bindtap='local'>
+      <image src='../../image/icon_local.png' mode="widthFix"></image>
+      <text>我的地址</text>
+      <image src='../../image/icon_jinru.png' mode="widthFix" class="return"></image>
+    </view>
+    <view class="my_list_coupon item" bindtap='makePhoneCall'>
+      <image src='../../image/icon_kefu.png' mode="widthFix"></image>
+      <text>联系客服</text>
+      <image src='../../image/icon_jinru.png' mode="widthFix" class="return"></image>
+    </view>
+    <view class="my_list_coupon item">
+      <image src='../../image/icon_xieyi.png' mode="widthFix"></image>
+      <text>用户协议</text>
+      <image src='../../image/icon_jinru.png' mode="widthFix" class="return"></image>
+    </view>
+    <!--<view class="my_list_coupon item">
+      <image src='../../image/icon_shar.png' mode="widthFix"></image>
+      <button open-type='share'>分享我们</button>
+      <image src='../../image/icon_jinru.png' mode="widthFix" class="return"></image>
+    </view>-->
+  </view>
+  
+</view>

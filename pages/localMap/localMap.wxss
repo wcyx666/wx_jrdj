@@ -1,0 +1,19 @@
+.local-map {
+  padding: 25rpx;
+  font-size: 14px;
+}
+.local-map input{
+  border:1px solid #ededed;
+  height:65rpx;
+  border-radius: 10rpx;
+  padding-left: 10rpx;
+}
+
+.local-list-item {
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #ededed;
+}
+.local-list-address {
+  color: #999;
+  padding-top: 15rpx;
+}

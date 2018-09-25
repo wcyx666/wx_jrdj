@@ -1,0 +1,50 @@
+<!--pages/index/palce/palce.wxml-->
+<view class="palce">
+  <view class="palce_banner">
+    <image src='../../../image/index/palce_banner.jpg' mode='widthFix'></image>
+  </view>
+  <view class="palce_list">
+    <view class="palce_list_item">
+      <view class="palce_list_item_left">
+        <image src='../../../image/index/icon_major.png' mode='widthFix'></image>
+      </view>
+      <view class="palce_list_item_right">
+        <view class="palce_list_item_title">
+          专业技师
+        </view>
+        <view class="palce_list_item_content">
+          菲佣式培训及技能学习，实名认真，100%健康证审核
+        </view>
+      </view>
+    </view>
+    <view class="palce_list_item">
+      <view class="palce_list_item_left">
+        <image src='../../../image/index/icon_standard.png' mode='widthFix'></image>
+      </view>
+      <view class="palce_list_item_right">
+        <view class="palce_list_item_title">
+          标准化服务
+        </view>
+        <view class="palce_list_item_content">
+          家具、电器表面无尘，厨卫洁净，马桶五金清洁光亮，地面洁净无水泽，门窗洁净光亮，垃圾倾倒更换新袋
+        </view>
+      </view>
+    </view>
+    <view class="palce_list_item">
+      <view class="palce_list_item_left">
+        <image src='../../../image/index/icon_security.png' mode='widthFix'></image>
+      </view>
+      <view class="palce_list_item_right">
+        <view class="palce_list_item_title">
+          售后保障
+        </view>
+        <view class="palce_list_item_content">
+          售后电话跟踪，不满意全额退款
+        </view>
+      </view>
+    </view>
+    <view class="palce_btn" bindtap='palce'>
+      下单
+    </view>
+  </view>
+</view>

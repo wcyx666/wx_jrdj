@@ -1,0 +1,28 @@
+<!--pages/my/coupon/coupon.wxml-->
+<view class="coupon">
+  <view class="coupon_box">
+    <view class="coupon_list">
+      <view class="coupon_list_left">
+        <view class="coupon_list_left_title">
+          电器优惠券
+        </view>
+        <view class="coupon_list_left_txt">
+          有效期至：2018年09月14日
+        </view>
+        <view class="coupon_list_left_txt" style='padding-bottom:0;'>
+          不可同享受多张优惠券
+        </view>
+      </view>
+      <view class="coupon_list_right">
+        <view class="coupon_list_right_box">
+          <view class="coupon_list_right_money">
+            25.0<text>元</text>
+          </view>
+          <view class="coupon_list_right_btn">
+            立即使用
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

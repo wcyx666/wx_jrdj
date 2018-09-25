@@ -1,0 +1,52 @@
+/* pages/index/palce/palce.wxss */
+.palce_banner {
+  width: 100%;
+}
+.palce_banner image {
+  width: 100%;
+}
+.palce_list {
+  padding: 25rpx;
+}
+.palce_list_item {
+  padding-top: 50rpx;
+  display: -webkit-box;
+  display: -o-box;
+  display: -moz-box;
+  display: box;
+}
+.palce_list_item_left {
+  width: 100rpx;
+  margin-right: 20rpx;
+}
+.palce_list_item_left image {
+  width: 100rpx;
+}
+.palce_list_item_right {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+.palce_list_item_title {
+  font-size: 16px;
+  color: #333;
+  padding-bottom: 20rpx;
+}
+.palce_list_item_content {
+  font-size: 14px;
+  color: #999;
+}
+.palce_btn {
+  width: 95%;
+  height: 85rpx;
+  color: #fff;
+  text-align: center;
+  line-break: 85rpx;
+  font-size: 16px;
+  background:#db5044; 
+  line-height: 85rpx;
+  border-radius: 5rpx;
+  position: fixed;
+  bottom: 40rpx;
+  left: 20rpx;
+}

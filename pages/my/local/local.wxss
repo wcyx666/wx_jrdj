@@ -1,0 +1,38 @@
+/* pages/my/local/local.wxss */
+.local {
+  font-size: 14px;
+}
+.local_list {
+  padding: 25rpx;
+  border-bottom: 1rpx solid #ededed;
+  overflow: hidden;
+}
+.local_list_info {
+  float: left;
+}
+.local_list_add {
+  padding-bottom: 10rpx;
+}
+.local_list_re {
+  color: #999;
+}
+.local_list image {
+  float: right;
+  width: 50rpx;
+  margin-top: 20rpx;
+}
+.local_news {
+  position: fixed;
+  bottom: 50rpx;
+  width: 100%;
+  
+}
+.local_add {
+  width: 90%;
+  height: 85rpx;
+  text-align: center;
+  border-radius: 3rpx;
+  border:1rpx solid #ededed;
+  line-height: 85rpx;
+  margin: 0 auto;
+}

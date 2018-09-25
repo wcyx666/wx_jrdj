@@ -1,0 +1,31 @@
+/**index.wxss**/
+.home {
+  padding: 25rpx;
+}
+.home_banner {
+  width: 100%;  
+}
+.home_banner image {
+  width: 100%;
+}
+.home_host {
+  margin-top: 50rpx;
+}
+.home_host_title {
+  font-size: 16px;
+  color: #000;
+  padding-bottom: 20rpx;
+}
+.home_host_list {
+  overflow: hidden;
+}
+.home_host_list_router {
+  width: 48%;
+  float: left;
+} 
+.home_host_list_router image {
+  width: 100%;  
+}
+.xinfang {
+  margin-left: 20rpx;
+}

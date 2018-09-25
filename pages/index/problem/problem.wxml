@@ -1,0 +1,17 @@
+<!--pages/index/problem/problem.wxml-->
+<view class="problem">
+  <view class="problem-type-list">
+    <view class="item">
+      <image src='../../../image/icon_coupon.png'></image>
+      <text>电视</text>    
+    </view>
+    <view class="item">
+      <image src='../../../image/icon_coupon.png'></image>
+      <text>电视</text>    
+    </view>
+    <view class="item">
+      <image src='../../../image/icon_coupon.png'></image>
+      <text>电视</text>    
+    </view>
+  </view>
+</view>

@@ -1,0 +1,36 @@
+/* pages/index/appointment/appointment.wxss */
+.make-date-list {
+  overflow: hidden;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  background: #ededed;
+}
+.make-date-list .item {
+  width: 20%;
+  float: left;
+}
+.make-time-list {
+  padding: 25rpx;
+}
+.make-time-list view {
+  width:20%;
+  height:58rpx;
+  background:#fff;
+  border:1rpx solid #b6b6b6;
+  font-size:24rpx;
+  color:#4d504d;
+  text-align:center;
+  border-radius:20rpx;
+  float:left;
+  margin:15rpx;
+  line-height: 58rpx;
+}
+
+.arctive {
+  color: #db5044;
+}
+.timeViewCor {
+  background: #ededed !important;
+}

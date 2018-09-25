@@ -1,0 +1,28 @@
+<view class="project">
+  <view class="project-type">
+    <view wx:for="{{ typeData }}" class="project-type-item {{ arctiveIndex == index?'arctive':'' }}" data-index="{{ index }}" data-name="{{ item }}" bindtap='bindIndex'>
+      <view class="money">
+        <image src='{{ item.icon }}'></image>
+      </view>
+      <view class="type">{{ item.name }}</view>
+    </view>
+  </view>
+  <!--<view class="project-input" wx:if="{{ arctiveIndex == 5 }}">
+    <text class="project-input-text">房屋面积</text>
+    <view class="project-input-box">
+      <input bindinput="bindKeyInput"/>
+      <text>平米</text>
+    </view>   
+  </view>-->
+  <view class="project-tips">
+    <view class="project-tips-title">
+      温馨提示
+    </view>
+    <view>1、使用匠人到家平台前，请充分了解并同意《匠人到家用户协议》。交易前充分沟通，明确包括但不限于服务项、金额、服务时间等具体细节</view>
+    <view>2、匠人到家平台服务由第三方（个人、企业）提供，强烈建议在师傅接单后，电话沟通详细（包含维修细节、价钱等），并保留相应的证据以利于售后维权。</view>
+    <view>3、如遇服务质量问题，可通过客服举报或者投诉客服电话15110729331。</view>
+  </view>
+  <view class="project-btn" bindtap='proType'>
+    确定选择
+  </view>
+</view>

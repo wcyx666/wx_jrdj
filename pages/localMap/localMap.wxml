@@ -1,0 +1,16 @@
+<!--pages/localMap/localMap.wxml-->
+<view class="local-map">
+  <view class="local-map-sea">
+    <input bindinput="bindInput" placeholder="输入小区名称搜索" focus="true" />
+  </view>
+  <view class="local-list">
+    <view class="local-list-item" wx:for="{{ pois }}" data-local="{{ item }}" bindtap="address">
+      <view>{{ item.title }}</view>
+      <view class="local-list-address">{{ item.address }}</view>
+    </view>
+  </view>
+</view>
+
+
+
+
