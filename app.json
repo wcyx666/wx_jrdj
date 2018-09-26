@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/index/problem/problem",   
+    
     "pages/index/index",
     "pages/my/local/localAdd/localAdd",
     "pages/my/local/localUpdate/localUpdate",
@@ -8,6 +8,7 @@
     "pages/localMap/localMap",
     "pages/index/service-address/address",
    
+    "pages/index/problem/problem",
     
     "pages/index/appointment/appointment",
     "pages/index/cleaning-project/project",

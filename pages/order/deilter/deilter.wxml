@@ -9,6 +9,7 @@
       <text class="bs" wx:if="{{ details.identification == 3 }}">已完成</text>
       <text class="bs" wx:if="{{ details.identification == 4 }}">已取消</text>
     </view>
+    <view class="problem" style='color:#db5044;'>[{{ details.proTitle }}]</view>
     <view class="problem">{{ details.textarea }}</view>
   </view>
   <view class="order-deilter-content">

@@ -5,29 +5,50 @@
   height: 100%;
   background: #f8f8f8;
 }
-.project-type {
+.content {
   overflow: hidden;
+}
+.content-type-title {
+  font-size: 12px;
+  color: #999;
+  padding-top: 20rpx;
+}
+.content-type-list {
+  font-size: 12px;
+  color: #999;
+  
+}
+.content-type-list text {
+  display: inline-block;
+  padding: 4px 12rpx;
+  border-radius: 10rpx;
+  border:1rpx solid #999;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
 }
 .project-type-item {
-  width: 30%;
-  margin-left: 16rpx;
-  margin-bottom: 18rpx;
-  margin-top: 10rpx;
   background: #fff;
-  text-align: center;
   font-size: 14px;
-  padding: 50rpx 0;
-  float: left;
-  border-radius: 6rpx;
+  padding: 20rpx;
   overflow: hidden;
-  border:1rpx solid #fff;
+  border-bottom:1rpx solid #ededed;
 }
 .project-type-item .money image{
-  width: 50rpx;
-  height: 50rpx;
+  width: 60rpx;
+  float: left;
 }
 .project-type-item .money {
   color: #db5044;
+}
+.project-type-item .type {
+  line-height: 60rpx;
+  margin-left: 30rpx;
+  float: left;
+}
+.project-type-item .tx image {
+  width: 40rpx;
+  float: right;
+  vertical-align: middle;
   margin-top: 10rpx;
 }
 .project-input {
@@ -58,9 +79,18 @@
   color: #999;
   padding: 25rpx;
   line-height: 24px;
+  padding-bottom: 150rpx;
 }
 .project-btn {
-  width: 95%;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 20rpx;
+}
+.project-btn-box {
+  width:95%;
   height: 85rpx;
   background: #db5044;
   color: #fff;
@@ -68,11 +98,14 @@
   line-height: 85rpx;
   font-size: 14px;
   border-radius: 6rpx;
-  position: absolute;
-  bottom: 30rpx;
-  left: 20rpx;
 }
 
 .arctive {
   border-color: #db5044;
+}
+.arctiveCor {
+  background: #db5044;
+  color: #fff;
+  border:1rpx solid #db5044 !important;
+
 }

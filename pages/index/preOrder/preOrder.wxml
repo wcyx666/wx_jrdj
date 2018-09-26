@@ -23,7 +23,7 @@
         <image src='../../../image/index/icon_xiangmu.png' mode='widthFix'></image>
       </view>
       <view class="center">
-        <input disabled="true" placeholder="请选择维修项目" value='{{ proName }}'/>
+        <input disabled="true" placeholder="请选择维修项目" value='{{ proName }}{{ proTitle }}'/>
       </view> 
       <view class="right">
         <image src='../../../image/icon_jinru.png' mode='widthFix'></image>

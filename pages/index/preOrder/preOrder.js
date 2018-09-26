@@ -12,6 +12,7 @@ Page({
     proType: "",// 预约项目
     makeDateTime:"",//预约时间
 
+    proTitle:"", // 故障名称
     types:"0",// 维修安装类型标识
     localTitle:"",// 小区地址
     localNum: "",// 小区楼号
@@ -114,6 +115,7 @@ Page({
           makeData: that.data.makeData, //预约日期
           makeTime: that.data.makeTime, //预约时间
           proName: that.data.proName,// 预约项目名称
+          proTitle: that.data.proTitle,// 预约项目名称
           isCoupon: that.data.coupon, //是否使用了优惠券
           textarea: that.data.textarea //问题详情描述
         },
@@ -198,8 +200,9 @@ Page({
       key: 'typeName',
       success: function (res) {
         that.setData({
-          proName: res.data.name,
-          proType: res.data.types
+          proName: res.data.name.name,
+          proTitle: res.data.title,
+          proType: res.data.name.types
         })
       },
     })
