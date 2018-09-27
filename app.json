@@ -12,8 +12,10 @@
     
     "pages/index/appointment/appointment",
     "pages/index/cleaning-project/project",
+    "pages/index/install-project/project",
     
-    "pages/index/preOrder/preOrder",
+    "pages/index/repair-preOrder/repair-preOrder",
+    "pages/index/install-preOrder/install-preOrder",
     "pages/index/palce/palce",
     "pages/my/my",
     

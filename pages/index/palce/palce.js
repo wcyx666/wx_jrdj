@@ -5,20 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    types:""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    console.log(options)
+    this.setData({
+      types: options.types
+    })
   },
 
   palce(){
-    wx.navigateTo({
-      url: '../preOrder/preOrder',
-    })
+    if(this.data.types == '1'){
+      wx.navigateTo({
+        url: '../repair-preOrder/repair-preOrder',
+      })
+    }else {
+      wx.navigateTo({
+        url: '../install-preOrder/install-preOrder',
+      })
+    }
+    
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

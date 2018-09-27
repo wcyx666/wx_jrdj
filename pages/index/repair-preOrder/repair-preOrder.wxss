@@ -1,0 +1,91 @@
+/* pages/index/preOrder/preOrder.wxss */
+.prt-order {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+}
+.prt-order-local {
+  background: #fff;
+  padding: 0 25rpx;
+}
+.prt-order-info {
+  background: #fff;
+  margin-top: 20rpx;
+  padding: 0 25rpx;
+}
+.prt-order-coupon {
+  background: #fff;
+  margin-top: 20rpx;
+  padding: 0 25rpx;
+}
+.prt-order-coupon textarea {
+  width: 100%;
+  height: 200rpx;
+  background: #fff;
+  font-size: 14px;
+  padding:20rpx 0;
+}
+.item {
+  padding: 30rpx 0;
+  overflow: hidden;
+  font-size: 14px;
+}
+.item input {
+  float: left;
+}
+.left {
+  width: 40rpx;
+  float: left;
+  margin-right: 20rpx;
+}
+.left image {
+  width: 100%;
+  vertical-align:middle;
+}
+.right {
+  width: 40rpx;
+  float: right;
+}
+.right .radio-group {
+  width: 30rpx;
+}
+.switch {
+  float: right;
+}
+.right image {
+  width: 100%;
+  vertical-align:middle;
+}
+.pre-btn {
+  width: 95%;
+  height: 85rpx;
+  color: #fff;
+  text-align: center;
+  line-break: 85rpx;
+  font-size: 16px;
+  background:#db5044; 
+  line-height: 85rpx;
+  border-radius: 5rpx;
+  position: fixed;
+  bottom: 40rpx;
+  left: 20rpx;
+}
+
+.wx-switch-input{
+  width:82rpx !important;
+  height:40rpx !important;
+  background: #db5044 !important;
+  border-color: #999 !important;
+}
+/*白色样式（false的样式）*/
+.wx-switch-input::before{
+  width:80rpx !important;
+  height: 36rpx !important;
+  
+}
+/*绿色样式（true的样式）*/
+.wx-switch-input::after{
+  width: 40rpx !important;
+  height: 36rpx !important;
+}

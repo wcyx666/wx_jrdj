@@ -1,0 +1,85 @@
+<!--pages/index/preOrder/preOrder.wxml-->
+<view class="prt-order">
+  <view class="prt-order-local" bindtap='routerLocal'>
+    <view class="item">
+      <view class="left">
+        <image src='../../../image/index/icon_local.png' mode='widthFix'></image>
+      </view>
+      <view class="center">
+        <input disabled="true" placeholder="请选择服务地址" value='{{ localTitle }}'/>
+      </view>
+      <!--<view class="center">
+        <view class="local-address"></view>
+        <view class="local-phone"></view>
+      </view>-->
+      <view class="right">
+        <image src='../../../image/icon_jinru.png' mode='widthFix'></image>
+      </view>
+    </view>
+  </view>
+  <view class="prt-order-info">
+    <view class="prt-order-project item" bindtap='routerProject'>
+      <view class="left">
+        <image src='../../../image/index/icon_xiangmu.png' mode='widthFix'></image>
+      </view>
+      <view class="center">
+        <input disabled="true" placeholder="请选择维修项目" value='{{ proName }}{{ proTitle }}'/>
+      </view> 
+      <view class="right">
+        <image src='../../../image/icon_jinru.png' mode='widthFix'></image>
+      </view>
+    </view>
+    <!--<view class="prt-order-project item">
+      <view class="left">
+        <image src='../../../image/index/icon_jiaju.png' mode='widthFix'></image>
+      </view>
+      <view class="center">
+        <input disabled="true" placeholder="请选择是否有家具" value="{{ furnVal == 1?'有家具':'' }}"/>
+      </view> 
+      <view class="switch">
+        <switch bindchange="switch1Change"/>
+      </view>
+    </view>-->
+    <view class="prt-order-project item">
+      <view class="left">
+        <image src='../../../image/index/icon_type.png' mode='widthFix'></image>
+      </view>
+      <view class="center">
+        <input disabled="true" placeholder="请选择维修、安装类型" value='维修' />
+      </view>
+      <view class="right">
+        <image src='../../../image/icon_jinru.png' mode='widthFix'></image>
+      </view>
+    </view>
+    <view class="prt-order-project item" bindtap='routerAppointment'>
+      <view class="left">
+        <image src='../../../image/index/icon_time.png' mode='widthFix'></image>
+      </view>
+      <view class="center">
+        <input disabled="true" placeholder="请选择预约时间" value='{{ makeDateTime }}'/>
+      </view> 
+      <view class="right">
+        <image src='../../../image/icon_jinru.png' mode='widthFix'></image>
+      </view>
+    </view>
+  </view>
+  <view class="prt-order-coupon">
+    <textarea placeholder='描述维修项目的详细问题，可以加快接单速度。' value='{{ textarea }}' bindinput='textarea'></textarea>
+    <!--<view class="item" bindtap='routerAvailable'>
+        <view class="left">
+          <image src='../../../image/index/icon_coupon.png' mode='widthFix'></image>
+        </view>
+        <view class="center">
+          <input disabled="true" placeholder="请选择优惠券"/>
+        </view> 
+        <view class="right">
+          <image src='../../../image/icon_jinru.png' mode='widthFix'></image>
+        </view>
+    </view>-->
+  </view>
+</view>
+<view class="pre-btn" bindtap='getOrder'>
+  确认下单
+</view>
+
+

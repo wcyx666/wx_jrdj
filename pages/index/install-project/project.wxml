@@ -1,0 +1,35 @@
+<view class="project">
+  <view class="project-type">
+    <view wx:for="{{ typeData }}" class="project-type-item">
+      <view class="content" data-index="{{ index }}" data-name="{{ item }}" bindtap='bindIndex'>
+        <view class="money">
+          <image src='{{ item.icon }}' mode='widthFix'></image>
+        </view>
+        <view class="type">{{ item.name }}</view>
+        <view class="tx">
+          <image src='../../../image/type/icon_tx_bottom.png' mode='widthFix'></image>
+        </view>
+      </view>
+      <view class="content-type" wx:if='{{ arctiveIndex == index }}'>
+        <view class="content-type-title">故障现象（单选）</view>
+        <view class="content-type-list">
+          <text wx:for="{{ problemArr }}"  data-title="{{ item }}" data-index="{{ index }}" catchtap='problem' class="{{ arctiveCor == index?'arctiveCor':'' }}">{{ item }}</text>
+        </view>
+      </view>
+    </view>  
+  </view>
+
+  <view class="project-tips">
+    <view class="project-tips-title">
+      温馨提示
+    </view>
+    <view>1、使用匠人到家平台前，请充分了解并同意《匠人到家用户协议》。交易前充分沟通，明确包括但不限于服务项、金额、服务时间等具体细节</view>
+    <view>2、匠人到家平台服务由第三方（个人、企业）提供，强烈建议在师傅接单后，电话沟通详细（包含维修细节、价钱等），并保留相应的证据以利于售后维权。</view>
+    <view>3、如遇服务质量问题，可通过客服举报或者投诉客服电话15110729331。</view>
+  </view>
+  
+</view>
+
+<view class="project-btn" bindtap='proType'>
+  <view class="project-btn-box">确定选择</view>
+</view>

@@ -9,7 +9,7 @@
     <view class="order-info" wx:for="{{ orderList }}" wx:for-item="item" wx:key="pro" data-id="{{ item.id }}" catchtap='orderDel'>
       <view class="title">
         {{ item.proName }}
-
+        （{{ item.wxTypes == '1'?'维修':'安装' }}）
         <text class="bs" wx:if="{{ item.identification == 0 }}">待接单</text>
         <text class="bs" wx:if="{{ item.identification == 1 }}">选师傅</text>
         <text class="bs" wx:if="{{ item.identification == 2 }}">维修中</text>

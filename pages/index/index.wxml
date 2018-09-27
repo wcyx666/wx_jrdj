@@ -1,5 +1,14 @@
 <!--index.wxml-->
 <view class="home">
+  <view class="home_box">
+    <view class="home_dv">
+      <image src='../../image/index/icon_dw.png'></image>
+      <text>{{ city }}</text>
+    </view>
+    <view class="home_server">
+      已服务<text>200</text>用户
+    </view>
+  </view>
   <view class="home_banner">
     <image src='../../image/index/banner.png' mode='widthFix'></image>
   </view>
@@ -9,20 +18,42 @@
     </view>
     <view class="home_host_list">
       <view class="home_host_list_router laofang">
-        <navigator url="./palce/palce">
-          <image src='../../image/index/bj_imgs.png' mode='widthFix'></image>
+        <navigator url="./palce/palce?types=1">
+          <image src='../../image/index/wx_banner.png' mode='widthFix'></image>
         </navigator>
       </view>
       <view class="home_host_list_router xinfang">
-        <navigator url="./palce/palce">
-          <image src='../../image/index/bj_imgs.png' mode='widthFix'></image>
+        <navigator url="./palce/palce?types=2">
+          <image src='../../image/index/az_banner.png' mode='widthFix'></image>
         </navigator>
       </view>
     </view>
   </view>
   <view class="home_server_guarantee">
     <view class="home_host_title">
-      服务保障
+      服务流程
+    </view>
+    <view class="home_server_guarantee-box">
+      <view class="guarantee-item">
+        <image src='../../image/index/icon_read1.png'></image>
+        <view>发布订单</view>
+      </view>
+      <view class="guarantee-item">
+        <image src='../../image/index/icon_order1.png'></image>
+        <view>师傅接单</view>
+      </view>
+      <view class="guarantee-item">
+        <image src='../../image/index/icon_phone1.png'></image>
+        <view>电话咨询</view>
+      </view>
+      <view class="guarantee-item">
+        <image src='../../image/index/icon_shangmen1.png'></image>
+        <view>上门维修</view>
+      </view>
+      <view class="guarantee-item">
+        <image src='../../image/index/icon_suc1.png'></image>
+        <view>订单完成</view>
+      </view>
     </view>
   </view>
 </view>

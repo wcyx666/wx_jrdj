@@ -29,26 +29,13 @@
         <image src='../../../image/icon_jinru.png' mode='widthFix'></image>
       </view>
     </view>
-    <!--<view class="prt-order-project item">
-      <view class="left">
-        <image src='../../../image/index/icon_jiaju.png' mode='widthFix'></image>
-      </view>
-      <view class="center">
-        <input disabled="true" placeholder="请选择是否有家具" value="{{ furnVal == 1?'有家具':'' }}"/>
-      </view> 
-      <view class="switch">
-        <switch bindchange="switch1Change"/>
-      </view>
-    </view>-->
     <view class="prt-order-project item">
       <view class="left">
         <image src='../../../image/index/icon_type.png' mode='widthFix'></image>
       </view>
-      <picker bindchange="bindPickerChange" value="{{typeArray}}" range="{{typeArray}}">
-        <view class="center">
-          <input disabled="true" placeholder="请选择维修、安装类型" value='{{ types == 0?"维修":"安装" }}' />
-        </view> 
-      </picker>
+      <view class="center">
+        <input disabled="true" placeholder="请选择维修、安装类型" value='安装' />
+      </view>
       <view class="right">
         <image src='../../../image/icon_jinru.png' mode='widthFix'></image>
       </view>

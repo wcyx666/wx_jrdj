@@ -1,13 +1,41 @@
 //index.js
 //获取应用实例
-const app = getApp()
+const app = getApp();
+// 引入SDK核心类
+const QQMapWX = require('../../lib/qqmap-wx-jssdk.js');
+
+const demo = new QQMapWX({
+  key: '5MPBZ-B6EAX-NIS4K-ZBRGH-KOPG7-NSBZA' // 必填
+});
 
 Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
+    city:"",
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+
+  reverseGeocoder(lat,lon) {
+    let that = this;
+    demo.reverseGeocoder({
+      location: {
+        latitude: app.globalData.locationData.latitude,
+        longitude: app.globalData.locationData.longitude,
+
+      },
+      get_poi: 1,
+      success: function (res) {
+        console.log(res)
+        that.setData({
+          city: res.result.address_component.city
+        })
+      },
+      fail: function (res) {
+        console.log(res);
+      }
+    });
   },
   //事件处理函数
   bindViewTap: function() {
@@ -16,6 +44,7 @@ Page({
     })
   },
   onLoad: function () {
+    let that = this;
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -42,6 +71,15 @@ Page({
         }
       })
     }
+    wx.getLocation({
+      type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+      success(res) {
+        const latitude = res.latitude
+        const longitude = res.longitude
+        that.reverseGeocoder(latitude,longitude)
+      }
+    })
+
   },
   getUserInfo: function(e) {
     console.log(e)
@@ -51,4 +89,5 @@ Page({
       hasUserInfo: true
     })
   }
+  
 })
