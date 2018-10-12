@@ -48,7 +48,6 @@ Page({
         option: e.currentTarget.dataset.name.types,
       },
       success(res) {
-        console.log(res);
         let problem = res.data.datas.repair_problem;
         let arr = problem.split('，');
         that.setData({

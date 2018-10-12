@@ -26,10 +26,12 @@ Page({
         id: options.id,
       },
       success(res) {
-        console.log(res)
-        that.setData({
-          details: res.data.details
-        })
+        setTimeout(function () {
+          wx.hideLoading();
+          that.setData({
+            details: res.data.details
+          })
+        }, 2000)
       },
       fail() {
 
@@ -70,7 +72,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    wx.showLoading()
   },
 
   /**

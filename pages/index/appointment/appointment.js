@@ -1,4 +1,6 @@
 // pages/index/appointment/appointment.js
+
+
 const app = getApp();
 Page({
 
@@ -21,10 +23,12 @@ Page({
       header: app.globalData.requestHeader,
       method: "POST",
       success(res) {
-        console.log
-        that.setData({
-          dateList:res.data,
-        })
+        setTimeout(function () {
+          wx.hideLoading();
+          that.setData({
+            dateList: res.data,
+          })
+        }, 2000)  
       },
       fail() {
 
@@ -48,6 +52,7 @@ Page({
     }
     let stamp = date + " " + time;
     let timestamp = new Date(stamp).getTime();
+    console.log(timestamp)
     if (timestamp > this.data.timestamp) {
       wx.setStorage({
         key: "timestamp",
@@ -74,6 +79,7 @@ Page({
    */
   onReady: function () {
     this.getTiem();
+    wx.showLoading();
   },
 
   /**

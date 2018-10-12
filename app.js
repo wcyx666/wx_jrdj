@@ -22,20 +22,22 @@ App({
         console.log(res);
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         let that = this;
+        let appid = 'wx4773aa4010088788';
+
+        let secret = 'b5ef829f3f154a73340c09ba70e13dae';
+        //调用request请求api转换登录凭证  
         wx.request({
-          url: that.globalData.requestHttp + 'wx_login_info.php',
-          header: that.globalData.requestHeader,
-          method: "POST",
-          data: { 
-            code: res.code 
+          url: 'https://api.weixin.qq.com/sns/jscode2session?appid=' + appid + '&secret=' + secret + '&grant_type=authorization_code&js_code=' + res.code,
+          header: {
+            'content-type': 'application/json'
           },
-          success(res) {
+          success: function (res) {
+            console.log(res);
+            // console.log(res.data.openid) //获取openid
             that.globalData.openid = res.data.openid
-          },
-          fail() {
-            
           }
         })
+        
       }
     })
     // 获取用户信息
@@ -78,6 +80,6 @@ App({
     },
 
     //登录 本地
-    requestHttp: "http://127.0.0.1/wechat/",
+    requestHttp: "http://120.78.72.0/wechat/",
   }
 })

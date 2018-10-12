@@ -46,7 +46,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    wx.showLoading();
   },
 
 
@@ -63,9 +63,14 @@ Page({
         uid: app.globalData.openid
       },
       success(res) {
-        that.setData({
-          dataArr: res.data.data
-        })
+        setTimeout(function () {
+          wx.hideLoading();
+          that.setData({
+            dataArr: res.data.data
+          })
+        }, 2000)
+
+        
       },
       fail() {
 

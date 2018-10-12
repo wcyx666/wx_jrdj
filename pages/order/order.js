@@ -26,10 +26,16 @@ Page({
   },
 
   getList(e){
-    this.setData({
-      types: e.currentTarget.dataset.index
-    })
-    this.getOrder(e.currentTarget.dataset.index);
+    wx.showLoading();
+    let that = this;
+    setTimeout(function () {
+      wx.hideLoading();
+      that.setData({
+        types: e.currentTarget.dataset.index
+      })
+      that.getOrder(e.currentTarget.dataset.index);
+    }, 2000)
+    
   },
 
   getOrder(types){
@@ -43,9 +49,13 @@ Page({
         types: types
       },
       success(res) {
-        that.setData({
-          orderList: res.data.orderList
-        })
+        setTimeout(function () {
+          wx.hideLoading();
+          that.setData({
+            orderList: res.data.orderList
+          })
+        }, 2000)
+        
       },
       fail() {
 
@@ -64,7 +74,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    wx.showLoading()
   },
 
   /**
